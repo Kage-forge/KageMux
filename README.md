@@ -49,6 +49,8 @@ While KageMux itself is a standalone portable executable, it acts as a central b
 2. Download the latest `KageMux.exe` file. (No installation required; it is completely portable).
 3. Place `KageMux.exe` in any folder on your computer and double-click to launch.
 
+*(Note: Because this is a newly compiled open-source tool, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new PyInstaller executables. Simply click "More info" and "Run anyway".)*
+
 ### Configuring The Armory (First Time Setup)
 Upon launching KageMux for the first time, you must link it to your dependencies.
 1. Click the **⚙️ Configure Armory** button at the top of the KageMux UI.
