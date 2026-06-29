@@ -1,6 +1,6 @@
 # KageMux: The Advanced Container Optimizer ⚡
 
-![Version](https://img.shields.io/badge/version-0.3-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+![Version](https://img.shields.io/badge/version-0.3-blue.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 
 **KageMux** is an industrial-grade, automated MKV grooming tool forged for media encoders, anime archivists, and data hoarders. It operates in the shadows to surgically repair, score, and optimize video containers before they ever touch your encoding pipeline.
 
