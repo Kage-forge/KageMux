@@ -80,5 +80,7 @@ KageMux is completely free and open-source. If this tool has saved your encoding
 
 ---
 
-## 📜 License
-This project is open-source and licensed under the MIT License. Feel free to fork, modify, and enhance the KageMux arsenal.
+## 📜 License & Usage
+KageMux is proprietary freeware. You are free to download, use, and share the compiled executable for personal or commercial media encoding workflows. 
+
+However, the core source code remains closed. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
