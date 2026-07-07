@@ -14,7 +14,7 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 ## 🚀 Core Arsenal
 
 * **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates.
-* **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish) while automatically identifying and flagging English "Dubtitles," "SDH," and "Signs & Songs."
+* **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish) while intelligently hunting for bracketed tags like `(Korean Names)` or `[Dubtitle]` to create perfectly clean English metadata.
 * **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
 * **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, and precise batch progress tracking.
@@ -47,7 +47,7 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 
 ## ⚙️ Configuring The Armory (First Time Setup)
 
-To protect your system from executing blank paths (`WinError 5`), KageMux locks all primary action buttons upon first launch. You must link KageMux to your dependencies.
+To protect your system from executing blank paths, KageMux locks all primary action buttons upon first launch. You must link KageMux to your dependencies.
 
 1. Click the **⚙️ Configure Armory** button at the top right of the KageMux UI.
 2. Click **Locate** and navigate to your `mkvmerge.exe` file (usually located in `C:\Program Files\MKVToolNix\`). Ensure you explicitly select the `.exe` file, not the folder.
