@@ -1,86 +1,58 @@
-# KageMux: The Advanced Container Optimizer ⚡
+# ⚡ KageMux: The Advanced Container Optimizer
 
-![Version](https://img.shields.io/badge/version-0.3-blue.svg) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+[![Version](https://img.shields.io/badge/Version-v0.6.2-blue.svg)](#) 
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)](#)
 
-**KageMux** is an industrial-grade, automated MKV grooming tool forged for media encoders, anime archivists, and data hoarders. It operates in the shadows to surgically repair, score, and optimize video containers before they ever touch your encoding pipeline.
+KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
 
-### The Problem it Solves
-The modern internet is filled with inconsistently muxed and corrupted MKV files. Many contain bloated audio tracks, messy subtitle flags, and broken metadata that cause media servers and encoding tools (like StaxRip or Handbrake) to crash instantly. KageMux acts as the ultimate filter. 
+By leveraging MKVToolNix and FFmpeg in the background, KageMux surgically cleans, scores, and restructures your media containers before you encode them, saving you from tedious manual track selection.
 
-**ShadowForge** automatically cleanses, scores, and structures healthy files to ensure playback perfection. **Phantom Reconstruct** forcefully resurrects deeply corrupted files that standard multiplexers reject.
-
----
-
-## ⚔️ The Arsenal (Features)
-
-### 1. ShadowForge (Standard Pipeline)
-For 99% of your library, KageMux utilizes MKVToolNix to perform a lossless, blazing-fast structural sweep:
-* **Smart Audio Grouping:** Detects, scores, and isolates the highest-quality audio tracks while actively purging inferior duplicates.
-* **Dual-Audio Routing:** Automatically sets Japanese audio to Default if both English and Japanese tracks survive the purge.
-* **Surgical Subtitles:** Scrubs messy ripper defaults, dynamically detects Signs & Songs vs. standard SDH dialogue, and natively applies the correct `Default` and `Forced` Matroska flags.
-* **Metadata Purging:** Strips embedded cover art and junk flags while safely copying all attached fonts.
-
-### 2. Phantom Reconstruct (Hybrid Engine)
-For the 1% of files that are so mangled that standard tools crash, KageMux deploys the Phantom Reconstruct protocol:
-* It violently tears the broken container apart using FFmpeg.
-* It mathematically reconstructs missing AAC and ADTS audio headers from scratch.
-* It feeds the newly sanitized raw streams back into MKVToolNix, weaving them into a pristine, mathematically perfect Matroska container ready for modern encoding.
-
-### 3. Automated CRC32 Hashing
-Automatically calculates and appends the standard anime 8-character CRC32 hash to your final filenames `_(XXXXXXXX).mkv`.
+> **Repository Notice:** This repository is utilized exclusively for official KageMux binary releases, documentation, and issue tracking. The core application source code is proprietary and is not published here.
 
 ---
 
-## 🔗 Prerequisites (The Dependencies)
-While KageMux itself is a standalone portable executable, it acts as a central brain that commands two distinct open-source engines. **You must have both of these installed on your Windows machine to use KageMux.**
+## 🚀 Core Arsenal
 
-### MKVToolNix (The Container Engine)
-* **What it does:** Losslessly parses, builds, and edits Matroska (`.mkv`) files.
-* **Where to get it:** Download the Windows installer from the [Official MKVToolNix Site](https://mkvtoolnix.download/downloads.html#windows).
-
-### FFmpeg (The Phantom Extraction Engine)
-* **What it does:** Handles raw stream extraction and audio header reconstruction.
-* **Where to get it:** Download the latest Windows essential build from [Gyan.dev](https://www.gyan.dev/ffmpeg/builds/) or the [Official FFmpeg Site](https://ffmpeg.org/download.html#build-windows). Extract the `.zip` and locate `ffmpeg.exe` inside the `bin` folder. (Note: If you use StaxRip, you already have FFmpeg installed in your StaxRip Apps folder!)
+* **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates.
+* **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish) while automatically identifying and flagging English "Dubtitles," "SDH," and "Signs & Songs."
+* **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases.
+* **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. Crucial for fixing "ADTS Header" errors or desync issues in catastrophic rips.
+* **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, and precise batch progress tracking.
 
 ---
 
 ## 🛠️ Installation & Setup
+
+### For Windows Users
 1. Navigate to the **Releases** tab on the right side of this GitHub page.
 2. Download the latest `KageMux.exe` file. (No installation required; it is completely portable).
 3. Place `KageMux.exe` in any folder on your computer and double-click to launch.
 
-*(Note: Because this is a newly compiled open-source tool, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new PyInstaller executables. Simply click "More info" and "Run anyway".)*
+*(Note: Because this is a newly compiled tool, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new PyInstaller executables. Simply click "More info" and "Run anyway".)*
 
-### Configuring The Armory (First Time Setup)
-Upon launching KageMux for the first time, you must link it to your dependencies.
-1. Click the **⚙️ Configure Armory** button at the top of the KageMux UI.
-2. Click **Locate** and navigate to where you installed MKVToolNix (select `mkvmerge.exe`).
-3. Click **Locate** and navigate to your FFmpeg bin folder (select `ffmpeg.exe`).
-4. Click **Save Configuration**. You never have to do this again.
-
----
-
-## 🚀 How to Use
-1. Click **Browse** and select a folder containing your messy MKV files.
-2. Check or uncheck the **CRC32** box depending on your naming preferences.
-3. Choose your operation:
-   * **⚡ Engage ShadowForge:** Click this for standard files to perfectly prep them for your media server or encoder.
-   * **🛠️ Phantom Reconstruct:** Click this ONLY if your files are deeply corrupted and failing to encode in other software.
+### For Linux Users
+KageMux natively supports POSIX environments via a standalone ELF binary.
+1. Download the `KageMux-Linux-x86_64` file from the **Releases** tab.
+2. Open your terminal and install the required dependencies (FFmpeg, MKVToolNix, and Tkinter):
+   * **Debian/Ubuntu:** `sudo apt update && sudo apt install mkvtoolnix ffmpeg python3-tk`
+   * **Arch:** `sudo pacman -Syu mkvtoolnix-cli ffmpeg tk`
+3. Make the binary executable: `chmod +x KageMux-Linux-x86_64`
+4. Run the application: `./KageMux-Linux-x86_64`
 
 ---
 
-## 🐛 Feedback & Bug Reports
-Found a bug, have a feature request, or need help with a specific file? Please navigate to the **Issues** tab at the top of this GitHub page and open a new ticket. Include as much detail as possible (and check the "Enable Debug Logging" box in KageMux to provide error logs).
+## ⚙️ Configuring The Armory (First Time Setup)
 
----
+Upon launching KageMux for the first time, the primary action buttons will be locked. You must link KageMux to your underlying tools.
 
-## ☕ Support the Forge
-KageMux is completely free and open-source. If this tool has saved your encoding queue (and your sanity), consider supporting the development!
-* [Support via Ko-fi](https://ko-fi.com/kageforge)
+1. Click the **⚙️ Configure Armory** button at the top right of the KageMux UI.
+2. Click **Locate** and navigate to your `mkvmerge.exe` file (usually in `C:\Program Files\MKVToolNix\`). Ensure you select the `.exe` file, not just the folder.
+3. Click **Locate** and navigate to your `ffmpeg.exe` file.
+4. Click **Save Configuration**. The UI will unlock, and you never have to do this again.
 
 ---
 
 ## 📜 License & Usage
-KageMux is proprietary freeware. You are free to download, use, and share the compiled executable for personal or commercial media encoding workflows. 
+KageMux is proprietary freeware. You are free to download, use, and share the compiled executables for personal or commercial media encoding workflows. 
 
-However, the core source code remains closed. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
+However, the core Python engine remains closed-source. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
