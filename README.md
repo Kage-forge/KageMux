@@ -23,21 +23,11 @@ By leveraging MKVToolNix and FFmpeg in the background, KageMux surgically cleans
 
 ## 🛠️ Installation & Setup
 
-### For Windows Users
 1. Navigate to the **Releases** tab on the right side of this GitHub page.
 2. Download the latest `KageMux.exe` file. (No installation required; it is completely portable).
 3. Place `KageMux.exe` in any folder on your computer and double-click to launch.
 
 *(Note: Because this is a newly compiled tool, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new PyInstaller executables. Simply click "More info" and "Run anyway".)*
-
-### For Linux Users
-KageMux natively supports POSIX environments via a standalone ELF binary.
-1. Download the `KageMux-Linux-x86_64` file from the **Releases** tab.
-2. Open your terminal and install the required dependencies (FFmpeg, MKVToolNix, and Tkinter):
-   * **Debian/Ubuntu:** `sudo apt update && sudo apt install mkvtoolnix ffmpeg python3-tk`
-   * **Arch:** `sudo pacman -Syu mkvtoolnix-cli ffmpeg tk`
-3. Make the binary executable: `chmod +x KageMux-Linux-x86_64`
-4. Run the application: `./KageMux-Linux-x86_64`
 
 ---
 
@@ -53,6 +43,6 @@ Upon launching KageMux for the first time, the primary action buttons will be lo
 ---
 
 ## 📜 License & Usage
-KageMux is proprietary freeware. You are free to download, use, and share the compiled executables for personal or commercial media encoding workflows. 
+KageMux is proprietary freeware. You are free to download, use, and share the compiled executable for personal or commercial media encoding workflows. 
 
 However, the core Python engine remains closed-source. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
