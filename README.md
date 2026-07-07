@@ -73,7 +73,7 @@ When KageMux evaluates a media file with multiple audio tracks of the same langu
 
 KageMux is completely free and actively maintained. If this tool has saved you hours of manual track selection or rescued a broken batch of files, consider supporting the development.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](INSERT_YOUR_KOFI_LINK_HERE)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/kageforge)
 
 ---
 
