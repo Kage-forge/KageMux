@@ -1,7 +1,7 @@
 # ⚡ KageMux: The Advanced Container Optimizer
 
 [![Version](https://img.shields.io/badge/Version-v0.6.2-blue.svg)](#) 
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)](#)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
 KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
 
