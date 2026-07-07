@@ -9,17 +9,18 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 
 > **Repository Notice:** This repository is utilized exclusively for official KageMux binary releases, documentation, and issue tracking. The core application source code is proprietary and is not published here.
 
----
+***
 
 ## 🚀 Core Arsenal
 
+* **Precision Targeting:** Seamlessly switch between massive batch folder automation and surgical single-file processing without needing to restructure your local directories.
 * **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates.
 * **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish) while intelligently hunting for bracketed tags like `(Korean Names)` or `[Dubtitle]` to create perfectly clean English metadata.
 * **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
 * **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, and precise batch progress tracking.
 
----
+***
 
 ## 🧩 The Dependency Matrix
 
@@ -33,7 +34,7 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 * **Purpose:** Powers the Phantom pipeline. KageMux uses `ffmpeg.exe` to brutally extract naked audio, video, and subtitle streams from catastrophically broken containers before pushing them back to MKVMerge for rebuilding.
 * **Download:** [FFmpeg Official Windows Builds](https://gyan.dev/ffmpeg/builds/) (We recommend the `ffmpeg-git-full.7z` release).
 
----
+***
 
 ## 🛠️ Installation & Deployment
 
@@ -43,7 +44,7 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 
 *(Note: Because this is a compiled Python executable, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new standalone binaries. Simply click "More info" and "Run anyway".)*
 
----
+***
 
 ## ⚙️ Configuring The Armory (First Time Setup)
 
@@ -54,7 +55,7 @@ To protect your system from executing blank paths, KageMux locks all primary act
 3. Click **Locate** and navigate to your `ffmpeg.exe` file.
 4. Click **Save Configuration**. The UI will verify the paths, unlock the action buttons, and save your settings permanently to a local `.json` configuration file.
 
----
+***
 
 ## 🧠 Understanding the Track Scoring Logic
 
@@ -66,7 +67,7 @@ When KageMux evaluates a media file with multiple audio tracks of the same langu
 3. **Standard Audio (100 points):** AAC, AAC-LC.
 4. **Channel Multiplier (+10 points per channel):** A 5.1 surround track will automatically beat a 2.0 stereo track of the same codec.
 
----
+***
 
 ## 📜 License & Usage
 
