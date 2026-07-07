@@ -9,7 +9,7 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 
 > **Repository Notice:** This repository is utilized exclusively for official KageMux binary releases, documentation, and issue tracking. The core application source code is proprietary and is not published here.
 
-***
+---
 
 ## 🚀 Core Arsenal
 
@@ -20,7 +20,7 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
 * **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, and precise batch progress tracking.
 
-***
+---
 
 ## 🧩 The Dependency Matrix
 
@@ -34,7 +34,7 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 * **Purpose:** Powers the Phantom pipeline. KageMux uses `ffmpeg.exe` to brutally extract naked audio, video, and subtitle streams from catastrophically broken containers before pushing them back to MKVMerge for rebuilding.
 * **Download:** [FFmpeg Official Windows Builds](https://gyan.dev/ffmpeg/builds/) (We recommend the `ffmpeg-git-full.7z` release).
 
-***
+---
 
 ## 🛠️ Installation & Deployment
 
@@ -44,7 +44,7 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 
 *(Note: Because this is a compiled Python executable, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new standalone binaries. Simply click "More info" and "Run anyway".)*
 
-***
+---
 
 ## ⚙️ Configuring The Armory (First Time Setup)
 
@@ -55,7 +55,7 @@ To protect your system from executing blank paths, KageMux locks all primary act
 3. Click **Locate** and navigate to your `ffmpeg.exe` file.
 4. Click **Save Configuration**. The UI will verify the paths, unlock the action buttons, and save your settings permanently to a local `.json` configuration file.
 
-***
+---
 
 ## 🧠 Understanding the Track Scoring Logic
 
@@ -67,7 +67,15 @@ When KageMux evaluates a media file with multiple audio tracks of the same langu
 3. **Standard Audio (100 points):** AAC, AAC-LC.
 4. **Channel Multiplier (+10 points per channel):** A 5.1 surround track will automatically beat a 2.0 stereo track of the same codec.
 
-***
+---
+
+## ☕ Support the Forge
+
+KageMux is completely free and actively maintained. If this tool has saved you hours of manual track selection or rescued a broken batch of files, consider supporting the development.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](INSERT_YOUR_KOFI_LINK_HERE)
+
+---
 
 ## 📜 License & Usage
 
