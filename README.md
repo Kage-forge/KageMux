@@ -83,3 +83,9 @@ KageMux is completely free and actively maintained. If this tool has saved you h
 KageMux is proprietary freeware. You are free to download, use, and share the compiled Windows executable for personal or commercial media encoding workflows. 
 
 However, the core Python engine remains closed-source. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
+
+---
+
+## 📜 The ShadowForge Archives
+
+Curious about how KageMux evolved from a basic CLI wrapper into a kinetic batch automation workspace? Review the complete development history, feature deployments, and architectural upgrades in the [Project Milestones](ARCHIVES.md).
