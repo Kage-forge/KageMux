@@ -88,4 +88,4 @@ However, the core Python engine remains closed-source. Reverse engineering, deco
 
 ## 📜 The ShadowForge Archives
 
-Curious about how KageMux evolved from a basic CLI wrapper into a kinetic batch automation workspace? Review the complete development history, feature deployments, and architectural upgrades in the [Project Milestones](ARCHIVES.md).
+Curious about how KageMux evolved from a basic CLI wrapper into a kinetic batch automation workspace? Review the complete development history, feature deployments, and architectural upgrades in the [Project Milestones]([ARCHIVES.md](https://github.com/Kage-forge/KageMux/blob/main/archives.md)).
