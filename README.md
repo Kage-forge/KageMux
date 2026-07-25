@@ -1,6 +1,6 @@
 # ⚡ KageMux: The Advanced Container Optimizer
 
-[![Version](https://img.shields.io/badge/Version-v0.7.1-blue.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-v0.8.0-blue.svg)](#) 
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
 KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
@@ -13,12 +13,12 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 
 ## 🚀 Core Arsenal
 
-* **Precision Targeting:** Seamlessly switch between massive batch folder automation and surgical single-file processing without needing to restructure your local directories.
+* **Kinetic Targeting:** Drop single files or entire batch folders directly into the GUI for instantaneous pathing and execution.
 * **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates. 
 * **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish). The engine intelligently hunts for bracketed tags like `(Korean Names)` or `[Dubtitle]`, and actively preserves critical VOD source acronyms like `[CR]` and `[AMZN]` to create perfectly clean, serialized English metadata.
 * **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
-* **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, and precise batch progress tracking. The engine concludes every batch run with a highly detailed, lore-accurate summary (**THE SHADOWFORGED REPORT** or **THE PHANTOM-RECONSTRUCTED REPORT**) detailing exact track retention data.
+* **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, native Windows taskbar branding, and precise batch progress tracking. The engine concludes every batch run with a highly detailed, lore-accurate summary (**THE SHADOWFORGED REPORT** or **THE PHANTOM-RECONSTRUCTED REPORT**) detailing exact track retention data.
 
 ---
 
@@ -48,11 +48,11 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 
 ## ⚙️ Configuring The Armory (First Time Setup)
 
-To protect your system from executing blank paths, KageMux locks all primary action buttons upon first launch. You must link KageMux to your dependencies.
+To protect your system from executing blank paths, KageMux locks all primary action buttons upon first launch. 
 
-1. Click the **⚙️ Configure Armory** button at the top right of the KageMux UI.
-2. Click **Locate** and navigate to your `mkvmerge.exe` file (usually located in `C:\Program Files\MKVToolNix\`). Ensure you explicitly select the `.exe` file, not the folder.
-3. Click **Locate** and navigate to your `ffmpeg.exe` file.
+1. Launch KageMux. The application will attempt to auto-detect MKVToolNix and FFmpeg in your standard system directories or PATH variables. If successful, the engine will unlock automatically.
+2. If auto-detection fails, click the **⚙️ Configure Armory** button at the top right of the UI.
+3. Click **Locate** and navigate to your `mkvmerge.exe` and `ffmpeg.exe` binaries explicitly. Ensure you select the `.exe` files, not the folders.
 4. Click **Save Configuration**. The UI will verify the paths, unlock the action buttons, and save your settings permanently to a local `.json` configuration file.
 
 ---
