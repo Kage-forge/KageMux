@@ -1,6 +1,6 @@
 # ⚡ KageMux: The Advanced Container Optimizer
 
-[![Version](https://img.shields.io/badge/Version-v0.8.0-blue.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-v0.8.14-blue.svg)](#) 
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
 KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
@@ -15,19 +15,20 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 
 * **Kinetic Targeting:** Drop single files or entire batch folders directly into the GUI for instantaneous pathing and execution.
 * **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates. 
-* **Omni-Linguist Subtitle Parser:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish). The engine intelligently hunts for bracketed tags like `(Korean Names)` or `[Dubtitle]`, and actively preserves critical VOD source acronyms like `[CR]` and `[AMZN]` to create perfectly clean, serialized English metadata.
+* **Omni-Linguist Subtitle Parser & SDH Priority:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish). The engine intelligently hunts for bracketed tags like `(Korean Names)` or `[Dubtitle]`, and actively preserves critical VOD source acronyms like `[CR]` and `[AMZN]` to create perfectly clean, serialized English metadata. The parser explicitly prioritizes SDH (Subtitles for the Deaf and Hard of Hearing) tracks, automatically assigning them the MKV `Default` and `Hearing Impaired` flags for maximum accessibility.
 * **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
-* **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, native Windows taskbar branding, and precise batch progress tracking. The engine concludes every batch run with a highly detailed, lore-accurate summary (**THE SHADOWFORGED REPORT** or **THE PHANTOM-RECONSTRUCTED REPORT**) detailing exact track retention data.
+* **VFR TimeWeaver:** A dedicated dual-directory synchronization module. It automatically extracts native Variable Frame Rate (VFR) timecodes from a source folder and injects them seamlessly into your re-encoded outputs, perfectly restoring corrupted frame rates without manual terminal commands.
+* **Live Telemetry:** Features a sleek, Material-inspired GUI with live terminal outputs, dynamic hardware-accelerated spinners, native Windows taskbar branding, and precise batch progress tracking. The engine concludes every batch run with a highly detailed, lore-accurate summary (**THE SHADOWFORGED REPORT**, **THE PHANTOM-RECONSTRUCTED REPORT**, or **THE TIMEWEAVER VFR REPORT**) detailing exact track retention data.
 
 ---
 
 ## 🧩 The Dependency Matrix
 
-KageMux is designed as a graphical "brain" that commands industry-standard CLI tools. To function, it requires two external dependencies installed on your system.
+KageMux is designed as a graphical "brain" that commands industry-standard CLI tools. To function, it requires external dependencies installed on your system.
 
 ### 1. MKVToolNix (Required)
-* **Purpose:** Powers the core ShadowForge engine. KageMux uses `mkvmerge.exe` to read the JSON telemetry of your files, strip out junk attachments, and execute the final, clean multiplexing phase.
+* **Purpose:** Powers the core ShadowForge engine and the VFR TimeWeaver. KageMux uses `mkvmerge.exe` to read the JSON telemetry of your files, strip out junk attachments, and execute the final multiplexing phase. It utilizes `mkvextract.exe` to rip variable timecodes from source media.
 * **Download:** [MKVToolNix Official Site](https://mkvtoolnix.download/)
 
 ### 2. FFmpeg (Required for Phantom Reconstruct)
@@ -52,7 +53,7 @@ To protect your system from executing blank paths, KageMux locks all primary act
 
 1. Launch KageMux. The application will attempt to auto-detect MKVToolNix and FFmpeg in your standard system directories or PATH variables. If successful, the engine will unlock automatically.
 2. If auto-detection fails, click the **⚙️ Configure Armory** button at the top right of the UI.
-3. Click **Locate** and navigate to your `mkvmerge.exe` and `ffmpeg.exe` binaries explicitly. Ensure you select the `.exe` files, not the folders.
+3. Click **Locate** and navigate to your `mkvmerge.exe`, `mkvextract.exe`, and `ffmpeg.exe` binaries explicitly. Ensure you select the `.exe` files, not the folders.
 4. Click **Save Configuration**. The UI will verify the paths, unlock the action buttons, and save your settings permanently to a local `.json` configuration file.
 
 ---
@@ -80,7 +81,7 @@ KageMux is completely free and actively maintained. If this tool has saved you h
 
 ## 📜 License & Usage
 
-KageMux is proprietary freeware. You are free to download, use, and share the compiled Windows executable for personal or commercial media encoding workflows. 
+KageMux is proprietary freeware created by Michael Garcia. You are free to download, use, and share the compiled Windows executable for personal or commercial media encoding workflows. 
 
 However, the core Python engine remains closed-source. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
 
