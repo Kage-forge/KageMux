@@ -4,6 +4,22 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ---
 
+### KageMux v0.8.14 (The TimeWeaver Milestone)
+This major update deployed precision synchronization tools and completely overhauled subtitle metadata adherence to eliminate playback paradoxes across advanced splitters.
+
+* **VFR TimeWeaver Module:** Deployed a dedicated dual-directory synchronization tool. The engine utilizes `mkvextract` to rip native Variable Frame Rate (VFR) timecodes from a source folder and injects them directly into re-encoded outputs, perfectly restoring duration and lip-sync without terminal commands.
+* **Strict SDH Inclusivity:** Rebuilt the subtitle parser to prioritize Subtitles for the Deaf and Hard of Hearing. The engine automatically assigns `Default` and `Hearing Impaired` flags strictly to the SDH track, ensuring automatic playback across all platforms.
+* **Standardized Forced Flags:** Resolved LAV Splitter logic conflicts by explicitly reserving the `Forced Display` flag solely for isolated "Signs & Songs" tracks, mathematically aligning the output with official MKVToolNix specifications.
+* **Pristine Core Resonance Logging:** Silenced redundant progress text from the terminal output. The engine compiles files silently in the background, relying entirely on the graphical progress bar and generating clean, uninterrupted terminal reports.
+
+### KageMux v0.8.10 (The Paradox Protocol)
+* **Metadata Singularity Enforcement:** Replicated the internal logic of the MKVToolNix GUI by forcing the application to explicitly strip residual `Default` flags from all secondary audio and video streams. This ensures a solitary default path, preventing player confusion and incorrect subtitle selection.
+* **Forced Display Overrides:** Transitioned the subtitle multiplexing syntax from legacy parameters to the modernized `--forced-display-flag` for total hardware compatibility.
+
+### KageMux v0.8.5 (The Inclusivity Override)
+* **SDH Exclusivity Targeting:** Adjusted the subtitle scanning logic to halt standard English track selection if an SDH or CC track is detected in the telemetry, forcing accessibility directly into the primary path.
+* **Metadata Protection Ring:** Re-engineered the subtitle tagging script to strictly preserve unique ripper group identifiers and codec strings instead of aggressively overwriting them with normalized base languages.
+
 ### KageMux v0.8.0 (The Kinetic Telemetry Milestone)
 This release elevated the application into an OS-aware workspace, drastically reducing user friction and expanding batch processing fluidity.
 
