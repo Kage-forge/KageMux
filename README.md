@@ -81,7 +81,7 @@ KageMux is completely free and actively maintained. If this tool has saved you h
 
 ## 📜 License & Usage
 
-KageMux is proprietary freeware created by Michael Garcia. You are free to download, use, and share the compiled Windows executable for personal or commercial media encoding workflows. 
+KageMux is proprietary freeware. You are free to download, use, and share the compiled Windows executable for personal or commercial media encoding workflows. 
 
 However, the core Python engine remains closed-source. Reverse engineering, decompiling, or repackaging the binary for unauthorized commercial distribution is strictly prohibited.
 
