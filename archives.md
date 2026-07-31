@@ -4,7 +4,15 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ---
 
-### KageMux v0.8.14 (The TimeWeaver Milestone)
+### KageMux v0.8.16 (The TimeWeaver Unification Update)
+This release bridged secondary toolsets into the global application parameters and resolved critical graphical interface anomalies within the Windows Shell.
+
+* **TimeWeaver Pipeline Unification:** Integrated synchronization outputs directly into global pathing rules. The engine now automatically calculates and appends CRC32 checksums or routes processed files to a dedicated `KageMuxed` directory based on the primary user configuration.
+* **Persistent Taskbar Branding:** Resolved a Windows API anomaly triggered by drag-and-drop modules. By declaring a default global icon sequence, the system prevents the OS from reverting to default system visual assets across spawned child windows.
+* **Transient Modal Architecture:** Engineered child dialog boxes to act as transient dependents of the main interface. This architectural shift unlocked localized drag-and-drop mechanics for internal text fields and improved taskbar window grouping.
+* **Streamlined Nomenclature:** Stripped redundant "VFR" branding across all graphical and terminal surfaces to establish a cleaner, more definitive "TimeWeaver" feature identity.
+
+### KageMux v0.8.14 (The Synchronization Milestone)
 This major update deployed precision synchronization tools and completely overhauled subtitle metadata adherence to eliminate playback paradoxes across advanced splitters.
 
 * **VFR TimeWeaver Module:** Deployed a dedicated dual-directory synchronization tool. The engine utilizes `mkvextract` to rip native Variable Frame Rate (VFR) timecodes from a source folder and injects them directly into re-encoded outputs, perfectly restoring duration and lip-sync without terminal commands.
