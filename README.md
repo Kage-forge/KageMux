@@ -1,6 +1,6 @@
 # ⚡ KageMux: The Advanced Container Optimizer
 
-[![Version](https://img.shields.io/badge/Version-v0.8.16-blue.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-v0.9.1-blue.svg)](#) 
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
 KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
@@ -15,6 +15,8 @@ By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux 
 
 * **Kinetic Targeting:** Drop single files or entire batch folders directly into the GUI for instantaneous pathing and execution.
 * **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates. 
+* **Global Audio Routing Matrix:** Features a dedicated interface dropdown to define your preferred default audio language (Chinese, Korean, English, or Auto). The engine dynamically scans the metadata of every file in your batch queue, injecting the MKV Default flag into your target language or executing a seamless fallback to standard Japanese routing if the track is missing.
+* **Intelligent Telemetry Harvesting:** The engine actively intercepts embedded ISO 639-2 language tags and raw ripper track titles. It standardizes messy metadata into clean track designations (converting dialect tags like `zho` or `yue` into standard `chi`) while rigorously preserving unique original titles to prevent media player fallbacks.
 * **Omni-Linguist Subtitle Parser & SDH Priority:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish). The engine intelligently hunts for bracketed tags like `(Korean Names)` or `[Dubtitle]`, and actively preserves critical VOD source acronyms like `[CR]` and `[AMZN]` to create perfectly clean, serialized English metadata. The parser explicitly prioritizes SDH (Subtitles for the Deaf and Hard of Hearing) tracks, automatically assigning them the MKV `Default` and `Hearing Impaired` flags for maximum accessibility.
 * **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
 * **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
