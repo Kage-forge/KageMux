@@ -4,6 +4,21 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ---
 
+### KageMux v0.9.1 (The Global Routing Update)
+KageMux crossed the 0.9.x threshold by deploying scalable global audio routing, tightening the ShadowForge fallback parameters, and completely modernizing the interface architecture.
+
+* **Global Audio Routing Matrix:** Introduced a native dropdown menu to define primary target languages (Chinese, Korean, English, or Auto) prior to batch execution. The engine dynamically scans each file and assigns the MKV `Default` flag to the selected stream.
+* **Intelligent Fallback Parameters:** Engineered a non-blocking fallback loop. If a queued file lacks the preferred language, the engine safely defaults to standard anime routing (Japanese, followed by English) to guarantee uninterrupted batch processing.
+* **Missing Tag Inference:** Upgraded the parsing matrix to handle `und` (Undefined) audio streams. The engine now scans raw track titles to infer and map the correct ISO 639-2 tag automatically, neutralizing messy ripper conventions.
+* **Modernized UI Rendering:** Bypassed legacy Windows rendering limitations on dropdown menus by injecting custom X11 styling declarations. The combobox lists now perfectly align with the proprietary KageMux dark theme without stark white popups.
+
+### KageMux v0.8.17 (The Telemetry & Metadata Patch)
+This critical patch resolved aggressive metadata erasure bugs and introduced intelligent language telemetry harvesting.
+
+* **Intelligent Telemetry Harvesting:** The audio scoring engine was upgraded to actively intercept embedded ISO 639-2 MKV language tags (such as `chi` or `jpn`), routing them through an internal dictionary to generate clean, standardized track metadata.
+* **Metadata Preservation Protocol:** Resolved a logical flaw that assigned blank strings to non-standard audio streams. The engine gracefully falls back to original track names, completely preventing media players from wiping titles and displaying generic placeholders like "Audio 2".
+* **Strict Language Flagging:** The engine was updated to explicitly enforce the `--language` command flag across all audio outputs, guaranteeing perfect hardware and software player recognition.
+
 ### KageMux v0.8.16 (The TimeWeaver Unification Update)
 This release bridged secondary toolsets into the global application parameters and resolved critical graphical interface anomalies within the Windows Shell.
 
