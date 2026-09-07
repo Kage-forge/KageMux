@@ -2,7 +2,16 @@
 
 This ledger tracks the architectural evolution of KageMux. From its origins as a rudimentary command-line wrapper to a fully autonomous, kinetic media workspace, each milestone represents a calculated upgrade in container optimization and pipeline automation.
 
----
+***
+
+### KageMux v1.0.0 (The Architectural Ascension)
+This major milestone fundamentally transformed KageMux from a lightweight utility into a scalable, high-performance Python application by shedding legacy frameworks and deploying strictly standardized naming protocols.
+
+* **PyQt6 Framework Migration:** Completely rebuilt the graphical interface using native PyQt6. Introduced dynamic QSS rendering with two persistent aesthetic profiles (ShadowForge Dark and Obsidian Ronin) and established thread-safe background execution via `pyqtSignal` objects.
+* **Shroud Designation Engine:** Integrated an autonomous batch renaming protocol. The engine automatically extracts episode integers from source files and synthesizes the show title, resolution, and fansub group into a strict, unified format (e.g., `(Hi10)_Title_-_01_(1080p)_(Group)_(CRC).mkv`), successfully bridging the gap between raw rips and standardized archival formats.
+* **Omni-Linguist Subtitle Fail-Safe:** Upgraded the subtitle parsing matrix to intercept catastrophically blank or undefined (`und`) language metadata. The engine now guarantees that disguised "Signs and Songs" tracks can never hijack the default MKV slot, forcefully elevating the primary dialogue track.
+* **Void-State Diagnostics:** Deployed a critical diagnostic toggle directly into the Core Resonance terminal. When activated, the engine intercepts fatal memory faults and exposes raw Python stack traces, transforming silent application crashes into actionable developer intelligence.
+* **Cyclic Redundancy Bypass:** Re-engineered the batch filtering logic. KageMux now securely ingests and processes third-party MKV files containing preexisting CRC hashes while simultaneously maintaining a strict anti-loop barrier for its own `KageMuxed` output directories.
 
 ### KageMux v0.9.1 (The Global Routing Update)
 KageMux crossed the 0.9.x threshold by deploying scalable global audio routing, tightening the ShadowForge fallback parameters, and completely modernizing the interface architecture.
