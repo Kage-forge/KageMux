@@ -1,49 +1,48 @@
-# ⚡ KageMux: The Advanced Container Optimizer
+# ⚡ KageMux: The Smart MKV Batch Optimizer & Renamer
 
-[![Version](https://img.shields.io/badge/Version-v1.0.0-blue.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-v1.0.3-blue.svg)](#) 
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
-KageMux is a proprietary freeware utility designed for media archivists and encoders. It acts as an intelligent, automated bridge between your raw MKV files and your encoding software (like StaxRip or HandBrake). 
+KageMux is a free, automated utility built for media archivists, anime fans, and video encoders. It acts as a smart bridge between your raw MKV files and your media server (like Plex or Jellyfin) or your encoding software (like StaxRip or HandBrake). 
 
-By leveraging the raw power of MKVToolNix and FFmpeg in the background, KageMux surgically cleans, scores, and restructures your media containers before you encode them. This completely eliminates the tedious manual track selection process for massive television batches.
+By utilizing MKVToolNix and FFmpeg in the background, KageMux automatically cleans up your files, selects the best audio, removes junk tracks, and standardizes your file names. This completely eliminates the boring, repetitive manual work of setting up massive TV show or anime batches.
 
 > **Repository Notice:** This repository is utilized exclusively for official KageMux binary releases, documentation, and issue tracking. The core application source code is proprietary and is not published here.
 
 ***
 
-## 🚀 Core Arsenal
+## 🚀 Key Features
 
-* **Kinetic Targeting:** Drop single files or entire batch folders directly into the GUI for instantaneous pathing and execution.
-* **The ShadowForge Engine:** Automatically scans and scores audio tracks, keeping the highest quality streams (Prioritizing FLAC/Opus > Dolby > AAC) while dropping inferior duplicates. 
-* **Global Audio Routing Matrix:** Features a dedicated interface dropdown to define your preferred default audio language (Chinese, Korean, English, or Auto). The engine dynamically scans the metadata of every file in your batch queue, injecting the MKV Default flag into your target language or executing a seamless fallback to standard Japanese routing if the track is missing.
-* **Intelligent Telemetry Harvesting:** The engine actively intercepts embedded ISO 639-2 language tags and raw ripper track titles. It standardizes messy metadata into clean track designations (converting dialect tags like `zho` or `yue` into standard `chi`) while rigorously preserving unique original titles to prevent media player fallbacks.
-* **Omni-Linguist Subtitle Parser & SDH Priority:** Dynamically detects, preserves, and tags international subtitles (e.g., Japanese, Arabic, Spanish). The engine intelligently hunts for bracketed tags like `(Korean Names)` or `[Dubtitle]`, and actively preserves critical VOD source acronyms like `[CR]` and `[AMZN]` to create perfectly clean, serialized English metadata. The parser explicitly prioritizes SDH (Subtitles for the Deaf and Hard of Hearing) tracks for maximum accessibility. It also features a terminal fallback matrix that safely parses undefined (`und`) metadata to ensure disguised Signs and Songs tracks never hijack the default slot.
-* **Dual-Audio Routing:** Flawlessly configures Default and Forced flags for standard Dual-Audio (JP/EN) anime releases based on audio presence.
-* **Shroud Designation Engine:** An integrated, standardized batch renaming protocol. It automatically extracts episode integers from source files and synthesizes your inputted show titles, resolutions, and fansub groups into a strict, unified format (e.g., `(Hi10)_Title_-_01_(1080p)_(Group)_(CRC).mkv`).
-* **The Phantom Reconstruct:** A specialized fallback pipeline that completely disassembles broken MKV files into raw streams via FFmpeg and reconstructs them into pristine containers. This is crucial for fixing "ADTS Header" errors or severe desync issues in catastrophic rips.
-* **TimeWeaver:** A dedicated dual-directory synchronization module. It automatically extracts native Variable Frame Rate (VFR) timecodes from a source folder and injects them seamlessly into your re-encoded outputs, perfectly restoring corrupted frame rates without manual terminal commands.
-* **PyQt6 Architecture & Live Telemetry:** Rebuilt entirely on a robust PyQt6 framework featuring dynamic QSS rendering (choose between *ShadowForge Dark* or *Obsidian Ronin* themes). It provides live terminal outputs, thread-safe execution, exact batch progress tracking, and **Void-State Diagnostics** to expose raw Python stack traces during fatal memory faults. The engine concludes every batch run with a highly detailed, lore-accurate summary (**THE SHADOWFORGED REPORT**, **THE PHANTOM-RECONSTRUCTED REPORT**, or **THE TIMEWEAVER REPORT**) detailing exact track retention data.
+* **Drag-and-Drop Interface:** Drop single files or entire batch folders directly into the app for instant processing.
+* **Smart Audio Filtering:** Automatically scans your files and keeps the highest quality audio streams. It prioritizes lossless formats (FLAC/Opus) over standard surround sound (Dolby), and drops unnecessary lower-quality duplicates to save hard drive space.
+* **Automatic Default Audio Routing:** Select your preferred language (Auto, English, Japanese, Chinese, or Korean) in the interface. KageMux scans the hidden metadata, finds your preferred language, and sets it as the default track. If your chosen language is missing, it safely falls back to standard Japanese routing.
+* **Advanced Subtitle Cleanup:** KageMux cleans up messy ripper track names and converts them into standard language tags. It smartly preserves important source tags (like `[CR]` for Crunchyroll) while actively prioritizing SDH (Deaf and Hard of Hearing) subtitles for better accessibility. It also ensures "Signs and Songs" tracks never accidentally become your default subtitle.
+* **Dual-Audio Support:** Perfectly configures the "Default" and "Forced" subtitle flags for standard Dual-Audio (Japanese and English) anime releases.
+* **Automated Batch Renaming:** Forget heavy external tools like PowerRename. KageMux automatically extracts episode numbers (including decimal episodes like `05.5`, OVAs, and OP/EDs) from messy files. It then standardizes them into a clean, uniform format: `(Hi10)_Show_Title_-_01_(1080p)_(FansubGroup)_(CRC32).mkv`.
+* **Emergency File Repair (Phantom Reconstruct):** A specialized fallback tool that safely extracts raw video, audio, and subtitle streams from catastrophically broken MKV files and rebuilds them into healthy containers. This is perfect for fixing "ADTS Header" errors or severe playback crashes.
+* **VFR Sync (TimeWeaver):** A dedicated tool that perfectly restores Variable Frame Rate (VFR) lip-sync. It rips the original timecodes from your source files and seamlessly injects them into your newly encoded outputs without requiring complicated terminal commands.
+* **Modern GUI & Live Progress:** Built on a fast, modern PyQt6 framework with beautiful dark themes (ShadowForge Dark and Obsidian Ronin). It features live terminal logs, exact batch progress tracking, and a diagnostic mode for easy troubleshooting.
 
 ***
 
-## 🧩 The Dependency Matrix
+## 🧩 Required Dependencies
 
-KageMux is designed as a graphical "brain" that commands industry-standard CLI tools. To function, it requires external dependencies installed on your system.
+KageMux is designed as a graphical "brain" that commands industry-standard media tools. To function, you must have the following free tools installed on your Windows system.
 
 ### 1. MKVToolNix (Required)
-* **Purpose:** Powers the core ShadowForge engine and the TimeWeaver. KageMux uses `mkvmerge.exe` to read the JSON telemetry of your files, strip out junk attachments, and execute the final multiplexing phase. It utilizes `mkvextract.exe` to rip variable timecodes from source media.
+* **Purpose:** Powers the core optimization engine and the TimeWeaver sync tool. KageMux uses `mkvmerge.exe` to strip out junk attachments and `mkvextract.exe` to rip variable timecodes.
 * **Download:** [MKVToolNix Official Site](https://mkvtoolnix.download/)
 
 ### 2. FFmpeg (Required for Phantom Reconstruct)
-* **Purpose:** Powers the Phantom pipeline. KageMux uses `ffmpeg.exe` to brutally extract naked audio, video, and subtitle streams from catastrophically broken containers before pushing them back to MKVMerge for rebuilding.
+* **Purpose:** Powers the emergency repair pipeline. KageMux uses `ffmpeg.exe` to forcefully extract naked streams from broken containers before rebuilding them.
 * **Download:** [FFmpeg Official Windows Builds](https://gyan.dev/ffmpeg/builds/) (We recommend the `ffmpeg-git-full.7z` release).
 
 ***
 
-## 🛠️ Installation & Deployment
+## 🛠️ Installation & Setup
 
 1. Navigate to the **Releases** tab on the right side of this GitHub page.
-2. Download the latest `KageMux.exe` file. (No installation required; it is completely portable).
+2. Download the latest `KageMux.exe` file. (No installation is required; the application is completely portable).
 3. Place `KageMux.exe` in a dedicated folder on your computer and double-click to launch.
 
 *(Note: Because this is a compiled Python executable, Windows SmartScreen or Windows Defender may display a "Windows protected your PC" warning. This is a standard false positive for new standalone binaries. Simply click "More info" and "Run anyway".)*
@@ -52,31 +51,31 @@ KageMux is designed as a graphical "brain" that commands industry-standard CLI t
 
 ## ⚙️ Configuring The Armory (First Time Setup)
 
-To protect your system from executing blank paths, KageMux locks all primary action buttons upon first launch. 
+To protect your system from errors, KageMux locks all primary action buttons upon its first launch. 
 
-1. Launch KageMux. The application will attempt to auto-detect MKVToolNix and FFmpeg in your standard system directories or PATH variables. If successful, the engine will unlock automatically.
+1. Launch KageMux. The app will attempt to automatically detect MKVToolNix and FFmpeg on your system. If successful, the engine will unlock immediately.
 2. If auto-detection fails, click the **⚙️ Configure Armory** button at the top right of the UI.
-3. Click **Locate** and navigate to your `mkvmerge.exe`, `mkvextract.exe`, and `ffmpeg.exe` binaries explicitly. Ensure you select the `.exe` files, not the folders.
-4. Click **Save Configuration**. The UI will verify the paths, unlock the action buttons, and save your settings permanently to a local `.json` configuration file.
+3. Click **Locate** and manually navigate to your `mkvmerge.exe`, `mkvextract.exe`, and `ffmpeg.exe` files. Be sure to select the `.exe` files, not the folders.
+4. Click **Save Configuration**. The UI will verify the paths, unlock the main buttons, and save your settings permanently.
 
 ***
 
-## 🧠 Understanding the Track Scoring Logic
+## 🧠 How Track Scoring Works
 
-When KageMux evaluates a media file with multiple audio tracks of the same language, it assigns a mathematical score to each track based on its codec and properties. It then discards the losers. 
+When KageMux processes a media file with multiple audio tracks of the same language, it assigns a mathematical score to each track based on its quality. It keeps the winner and discards the rest. 
 
 **The Hierarchy:**
-1. **Uncompressed / Lossless (300 points):** FLAC, TrueHD, DTS-HD MA, Opus.
+1. **Lossless / High-Res (300 points):** FLAC, TrueHD, DTS-HD MA, Opus.
 2. **High-Quality Surround (200 points):** AC-3, E-AC-3, Standard Dolby Digital.
 3. **Standard Audio (100 points):** AAC, AAC-LC.
-4. **Channel Multiplier (+10 points per channel):** A 5.1 surround track will automatically beat a 2.0 stereo track of the same codec.
-5. **Duration Tie-Breaker:** If two duplicate audio tracks tie in points, the engine reads the `duration_ns` telemetry or embedded string tags (e.g., `tag_duration`, `tag_number_of_frames`) to retain the longest, most complete stream while purging the fragmented file.
+4. **Channel Multiplier (+10 points per channel):** A 5.1 surround track will automatically beat a 2.0 stereo track of the exact same format.
+5. **Duration Tie-Breaker:** If two duplicate audio tracks tie in points, the engine automatically keeps the longest, most complete stream while deleting the fragmented file.
 
 ***
 
-## ☕ Support the Forge
+## ☕ Support the Project
 
-KageMux is completely free and actively maintained. If this tool has saved you hours of manual track selection or rescued a broken batch of files, consider supporting the development.
+KageMux is completely free and actively maintained. If this tool has saved you hours of manual renaming, automated your track selections, or rescued a broken batch of files, consider supporting the development.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/kageforge)
 
@@ -90,6 +89,6 @@ However, the core Python engine remains closed-source. Reverse engineering, deco
 
 ***
 
-## 📜 The ShadowForge Archives
+## 📜 The Project Archives
 
-Curious about how KageMux evolved from a basic CLI wrapper into a kinetic batch automation workspace? Review the complete development history, feature deployments, and architectural upgrades in the [Project Milestones](https://github.com/Kage-forge/KageMux/blob/main/archives.md).
+Curious about how KageMux evolved from a basic command-line wrapper into an advanced batch automation workspace? Review the complete development history and feature updates in the [Project Milestones](https://github.com/Kage-forge/KageMux/blob/main/archives.md).
