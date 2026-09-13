@@ -4,6 +4,14 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ***
 
+### KageMux v1.0.3 (The Shroud Fortification)
+This rapid deployment cycle fortified the Shroud Designation Engine, resolving critical Windows pathing anomalies and introducing intelligent fractional episode synchronization.
+
+* **Fractional Episode Synchronization:** Engineered dynamic integer padding for decimal releases. When the engine detects a fractional episode (like `05.5`), it automatically zero-pads the corresponding base integer (`05.0`) to guarantee flawless alphanumeric sorting within the Windows Shell.
+* **Nomenclature Preservation:** Calibrated the regex extraction boundaries to capture exact OP and ED string variations (e.g., `OP2`, `ED1A`) instead of aggressively overwriting them with generic sequence tags.
+* **Strict Character Sanitization:** Hardened the naming matrix to actively intercept and purge illegal Windows filename characters (`< > : " / \ | ? *`), completely neutralizing `[WinError 123]` thread crashes before execution.
+* **Extraction Failsafes:** Re-engineered the episode extraction parameters with strict word boundaries to prevent the system from accidentally interpreting hexadecimal CRC values or video resolutions as episode integers.
+
 ### KageMux v1.0.0 (The Architectural Ascension)
 This major milestone fundamentally transformed KageMux from a lightweight utility into a scalable, high-performance Python application by shedding legacy frameworks and deploying strictly standardized naming protocols.
 
