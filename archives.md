@@ -4,6 +4,13 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ***
 
+### KageMux v1.1.0 (The Courier Protocol)
+This major deployment cycle introduced fully autonomous, in-place updating capabilities alongside critical spatial layout and aesthetic optimizations.
+
+* **The Karasu Handoff Protocol:** Engineered a headless background courier (`karasu.exe`) to bypass strict Windows OS executable file locks. KageMux natively streams the binary payload via an asynchronous `DownloadWorker` thread[cite: 7], hands the temporary file to Karasu, and safely self-terminates[cite: 7]. Karasu executes the binary swap, aggressively polls the OS to purge the `.old` backup file, and cleanly reboots the workspace.
+* **Bilateral Control Layout:** Decoupled the top navigation bar into a dynamically stretched, split layout[cite: 7]. Theme and Armory configurations are permanently anchored left, while the Update checker and the newly integrated Ko-fi Support portal are anchored right, ensuring perfect geometric balance across varying monitor sizes[cite: 7].
+* **Shroud Designation UI Polish:** Rebalanced horizontal UI elements by allocating 3 parts (75%) of available space to the Title input and 1 part (25%) to the Group input[cite: 7]. Injected an exact 8-pixel top margin to visually separate the input parameters from the activation toggle[cite: 7]. Compressed the Group placeholder text to strictly read `"e.g., SubsPlease"` to entirely eliminate visual cutoff within the condensed bounding box[cite: 7].
+
 ### KageMux v1.0.3 (The Shroud Fortification)
 This rapid deployment cycle fortified the Shroud Designation Engine, resolving critical Windows pathing anomalies and introducing intelligent fractional episode synchronization.
 
