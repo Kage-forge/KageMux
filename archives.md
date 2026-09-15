@@ -4,6 +4,12 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ***
 
+### KageMux v1.1.1 (The Nomenclature Patch)
+This rapid logic patch refined the Shroud Designation Engine's episode extraction matrix to natively isolate irregular release formats without capturing garbage metadata.
+
+* **Irregular Format Isolation:** Upgraded the regular expression engine to actively target `OVA`, `ONA`, `Special`, and `SP` strings. The engine now flawlessly captures these tags and their associated integers (e.g., converting `OVA 01` or `SP-02` into `OVA_01` and `Special_02`) while automatically discarding trailing resolution tags or ripper metadata like `(BD_1080p)`.
+* **Season 0 Preservation Protocol:** Engineered an explicit bypass for `S00` metadata anomalies. Instead of stripping the season tag and forcing a collision with main series episodes, the engine safely preserves the `S00Exx` string. This isolates prequels and promotional specials, preventing batch overwrites and granting the user total control over manual bulk renaming workflows.
+
 ### KageMux v1.1.0 (The Courier Protocol)
 This major deployment cycle introduced fully autonomous, in-place updating capabilities alongside critical spatial layout and aesthetic optimizations.
 
