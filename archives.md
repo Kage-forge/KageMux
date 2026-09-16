@@ -4,6 +4,21 @@ This ledger tracks the architectural evolution of KageMux. From its origins as a
 
 ***
 
+### KageMux v1.1.4 (The URL Sanitization Patch)
+This update expanded the Shroud Designation Engine's validation matrix to neutralize URL-breaking characters before file generation.
+* **Expanded Character Ban:** Actively intercepts and blocks brackets (`[` and `]`), ampersands (`&`), and plus signs (`+`) in user inputs to completely prevent URL encoding standard violations and cloud storage API routing failures.
+* **Automated Failsafe Scrubbing:** Mirrored the expanded validation array within the core renaming logic to autonomously strip illegal characters in the background if the graphical user interface validation is somehow bypassed.
+
+### KageMux v1.1.3 (The B2 Routing Override)
+This patch introduced strict input sanitization to resolve critical routing conflicts with external cloud storage providers and link shorteners.
+* **Comma Neutralization:** Engineered a GUI intercept to immediately halt execution and deploy a targeted modal warning if a comma (`,`) is detected in the Show Title or Fansub Group fields.
+* **Database Integrity:** Re-engineered the underlying formatting engine to systematically scrub commas from the final string, guaranteeing structural compatibility with B2 storage ecosystems.
+
+### KageMux v1.1.2 (The Decimal Decoupling Hotfix)
+This rapid logic hotfix overhauled the regex targeting matrix to resolve episode extraction failures caused by complex alphanumeric strings and dot-delimited metadata.
+* **Alphanumeric OP/ED Capture:** Upgraded the capture groups to seamlessly process alphanumeric theme song variations (e.g., `NCED01`), neutralizing a boundary failure that previously defaulted these files to `00`.
+* **Resolution Tag Bleed:** Decoupled base integers from subsequent decimals and deployed a `clean_decimal` validation function. This explicitly filters out known video resolution or codec strings (like `.1080`, `.720`, `.264`), preventing them from bleeding into the fractional episode syntax.
+
 ### KageMux v1.1.1 (The Nomenclature Patch)
 This rapid logic patch refined the Shroud Designation Engine's episode extraction matrix to natively isolate irregular release formats without capturing garbage metadata.
 
