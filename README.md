@@ -1,6 +1,6 @@
 # ⚡ KageMux: The Smart MKV Batch Optimizer & Renamer
 
-[![Version](https://img.shields.io/badge/Version-v1.1.4-blue.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-v1.1.5-blue.svg)](#) 
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 
 KageMux is a free, automated utility built for media archivists, anime fans, and video encoders. It acts as a smart bridge between your raw MKV files and your media server (like Plex or Jellyfin) or your encoding software (like StaxRip or HandBrake). 
@@ -13,7 +13,8 @@ By utilizing MKVToolNix and FFmpeg in the background, KageMux automatically clea
 
 ## 🚀 Key Features
 
-* **Autonomous Updates (The Karasu Protocol):** Powered by a headless background courier, KageMux safely queries the GitHub API for new releases and executes seamless, in-place binary swaps. This bypasses Windows executable file locks automatically.
+* **Autonomous Updates (The Karasu Protocol):** Powered by a headless background courier, KageMux safely queries the GitHub API for new releases and executes seamless, in-place binary swaps. The updater permanently resolves Windows Shell version drift by exclusively outputting all new updates as `KageMux.exe`, ensuring your local desktop file always perfectly matches the internal GUI version.
+* **Windows Context Menu Injection:** Deeply integrate the workspace into your native OS environment. By enabling the "System Integration" toggle within your Armory Configuration, you can right-click any folder in Windows Explorer and select "Process with KageMux" to instantly launch the application with your target path natively queued.
 * **Drag-and-Drop Interface:** Drop single files or entire batch folders directly into the app for instant processing.
 * **Smart Audio Filtering:** Automatically scans your files and keeps the highest quality audio streams. It prioritizes lossless formats (FLAC/Opus) over standard surround sound (Dolby), and drops unnecessary lower-quality duplicates to save hard drive space.
 * **Automatic Default Audio Routing:** Select your preferred language (Auto, English, Japanese, Chinese, or Korean) in the interface. KageMux scans the hidden metadata, finds your preferred language, and sets it as the default track. If your chosen language is missing, it safely falls back to standard Japanese routing.
