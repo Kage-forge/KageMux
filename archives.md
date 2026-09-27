@@ -1,157 +1,153 @@
 # ⚡ The ShadowForge Archives: Project Milestones
 
-This ledger tracks the architectural evolution of KageMux. From its origins as a rudimentary command-line wrapper to a fully autonomous, kinetic media workspace, each milestone represents a calculated upgrade in container optimization and pipeline automation.
+This document records the architectural progression of KageMux. From its beginning as a basic command-line script to a fully autonomous kinetic media workspace, each logged milestone represents a calculated enhancement in pipeline automation and container optimization.
 
 ***
 
-### KageMux v1.1.9 (The Matrix Decoupling & UI Polish Update)
-This structural update reorganized the graphical user interface for a logical, top-to-bottom workflow and eliminated native Windows rendering artifacts.
-* **ShadowSight Intercept Integration:** Formally rebranded the interactive pre-flight modal and shifted it up the visual hierarchy to guarantee a sequential workflow configuration.
-* **Decoupled Output Routing:** Separated the CRC32 hashing protocol from the directory routing logic. Users can now independently append standalone hashes and bypass the `KageMuxed` folder entirely to output directly alongside source files.
-* **State Machine Locking:** Engineered an autonomous locking mechanism that visually checks and disables the standalone CRC checkbox the moment the Shroud Designation Engine is armed, preventing conflicting hashing loops.
-* **Interface Rendering Polish:** Injected strict QSS transparency declarations into the `QScrollArea` to override legacy Windows operating system graphics, deploying a modern, rounded scrollbar handle. Additionally, stripped redundant text from the overarching progress labels to safely delegate numerical percentage tracking to the native PyQt6 progress bars.
+### KageMux v1.2.0 (The Nexus Assembler Update)
+This major architectural deployment transitions the application from a strict subtractive container optimizer into a universal media assembly workspace.
+* **The Nexus Assembler Module:** Integrated a universal multi-track multiplexing engine directly into the graphical interface. The system executes an agnostic recursive scan to locate base video files and seamlessly absorbs identically named external audio streams, subtitle scripts, and global fonts into a unified master container.
+* **Dynamic Language Inference:** Engineered an automated parsing routine within the Nexus loop. The engine actively reads folder nomenclature to assign the correct ISO 639-2 language tags to external assets during the injection process.
+* **Omni-Linguist Matrix Refinement:** Restructured the subtitle parsing matrix to mathematically score all duplicate SDH and Signs & Songs tracks. The engine now routes all isolated subsets through the full codec hierarchy, ensuring that superior formats like `.ass` or `.srt` permanently capture the forced designation over weaker retail streams like `.pgs`.
+* **Fused Tag Extraction:** Enhanced the Shroud Designation Engine to seamlessly bypass fused season integers (such as S01 or S2). This allows the system to accurately isolate embedded media tags (including OP, ED, OVA, and SP) without breaking the alphanumeric episode sequence or triggering zero-state fallbacks.
+
+### KageMux v1.1.9 (Matrix Decoupling & Interface Polish)
+This structural revision optimized the graphical interface for a logical top-to-bottom workflow and purged native Windows rendering artifacts.
+* **ShadowSight Intercept Integration:** Officially renamed the interactive pre-flight window and moved it higher in the visual hierarchy to ensure a proper sequential setup.
+* **Decoupled Output Routing:** Detached the CRC32 hashing mechanism from the directory pathing logic. Operators can now append hashes independently and skip the `KageMuxed` directory to output files right next to the source files.
+* **State Machine Locking:** Built an autonomous lock that visually disables the standalone CRC checkbox the moment the Shroud Engine is armed, stopping conflicting hashing loops.
+* **Interface Rendering Polish:** Applied strict QSS transparency rules to the `QScrollArea` to override default operating system graphics, injecting a modern rounded scrollbar. Additionally, removed redundant text from progress labels to let native PyQt6 bars handle numerical tracking.
 
 ### KageMux v1.1.8 (The ShadowSight Intercept Protocol)
-This feature deployment introduced a manual override capability to bypass standard mathematical track scoring.
-* **Interactive Pre-Flight Scan:** Deployed a synchronous, thread-safe intercept that halts the background worker before multiplexing begins. The engine scans the first MKV file and populates a graphical modal containing all available subtitle tracks.
-* **Mathematical Obliteration:** Upgraded the subtitle scoring matrix to accept manual inputs. The engine now assigns a massive 500,000-point override to the user's selected track signature, cleanly bypassing standard tie-breaker logic (such as ASS versus SRT codec comparisons).
-* **Nameless Track Synchronization:** Engineered a strict metadata fallback that explicitly assigns "Unknown Track" to blank subtitle streams across both the user interface and the core engine, guaranteeing that forced selections never fail due to string mismatches.
+This update deployed a manual override function to bypass automated mathematical track evaluations.
+* **Interactive Pre-Flight Scan:** Integrated a thread-safe intercept that pauses the background processor before multiplexing initiates. The engine parses the first MKV file and generates a graphical modal displaying all available subtitle streams.
+* **Mathematical Obliteration:** Modified the subtitle matrix to accept manual commands. The system now assigns a 500,000-point override to the user's targeted track, safely ignoring standard tie-breaker algorithms (like ASS versus SRT comparisons).
+* **Nameless Track Synchronization:** Built a metadata fallback that applies "Unknown Track" to empty subtitle streams in both the UI and the core engine, ensuring forced selections never fail from string matching errors.
 
 ### KageMux v1.1.7 (The Recursive Blindness Patch)
-This logic hotfix fortified the batch renamer against internal string failures.
-* **Underscore Delimiter Integration:** Rebuilt the Shroud Designation Engine's episode extraction matrix to natively recognize underscores (`_`) as valid metadata boundaries.
-* **Word Boundary Elimination:** Stripped the strict `\b` regex constraints that previously caused the engine to default to episode `00` when processing files that were already formatted by KageMux. The tool can now safely re-process its own naming outputs without losing sequence integers.
+This logic update hardened the batch renaming sequence against internal string processing failures.
+* **Underscore Delimiter Integration:** Restructured the Shroud episode extraction logic to natively accept underscores (`_`) as valid data boundaries.
+* **Word Boundary Elimination:** Removed strict `\b` regex limitations that previously forced the engine to output episode `00` when processing files previously named by KageMux. The application can now safely loop its own naming outputs without dropping sequence numbers.
 
 ### KageMux v1.1.6 (The Absolute Pathing Hotfix)
-This rapid deployment secured the core configuration file against temporary data loss during external shell launches.
-* **Current Working Directory Anchor:** Resolved a critical configuration amnesia bug triggered by the Windows Context Menu integration. The engine now queries its exact installation path using an absolute `sys.executable` resolver rather than relying on the volatile Windows shell CWD.
-* **Rogue File Prevention:** This absolute anchoring permanently prevents the application from mistakenly dropping blank `kagemux_config.json` files into target media directories during right-click context menu launches.
+This urgent patch protected the core configuration file from temporary data corruption during shell launches.
+* **Current Working Directory Anchor:** Fixed a configuration reset error caused by the Windows Context Menu integration. The engine now finds its installation path using an absolute `sys.executable` command instead of relying on the volatile Windows shell CWD.
+* **Rogue File Prevention:** This pathing anchor permanently stops the application from dropping blank `kagemux_config.json` templates into media folders during right-click execution.
 
 ### KageMux v1.1.5 (The OS Integration Update)
-This deployment transitioned the application from a standalone utility into a deeply integrated Windows media workspace by standardizing the deployment architecture.[cite: 23]
-* **Windows Context Menu Injection:** Engineered native operating system integration. Users can now toggle system integration within the Armory Configuration to write a localized registry key, allowing them to right-click any directory in Windows Explorer to instantly launch the workspace with the target path natively queued.[cite: 23]
-* **The Karasu Nomenclature Override:** Re-engineered the Karasu background courier to permanently resolve Windows Shell version drift. The updater now accepts the old versioned filename strictly for deletion and outputs the new binary exclusively as `KageMux.exe`, guaranteeing the local executable name perfectly matches the internal GUI version.[cite: 23]
+This release elevated the application from a standalone tool into a deeply embedded Windows media workspace.
+* **Windows Context Menu Injection:** Built native operating system integration. Operators can toggle system integration inside the Armory Configuration to generate a local registry key, granting them the ability to right-click any folder to launch the workspace with the path pre-loaded.
+* **The Karasu Nomenclature Override:** Adjusted the Karasu courier to permanently fix Windows Shell version drift. The updater now takes the old versioned file just to delete it, outputting the new binary specifically as `KageMux.exe` so local shortcuts never break.
 
 ### KageMux v1.1.4 (The URL Sanitization Patch)
-This update expanded the Shroud Designation Engine's validation matrix to neutralize URL-breaking characters before file generation.[cite: 23]
-* **Expanded Character Ban:** Actively intercepts and blocks brackets (`[` and `]`), ampersands (`&`), and plus signs (`+`) in user inputs to completely prevent URL encoding standard violations and cloud storage API routing failures.[cite: 23]
-* **Automated Failsafe Scrubbing:** Mirrored the expanded validation array within the core renaming logic to autonomously strip illegal characters in the background if the graphical user interface validation is somehow bypassed.[cite: 23]
+This update broadened the Shroud Designation validation matrix to stop URL-breaking characters prior to file creation.
+* **Expanded Character Ban:** Automatically blocks brackets (`[` and `]`), ampersands (`&`), and plus signs (`+`) from user inputs to prevent URL encoding errors and storage API routing crashes.
+* **Automated Failsafe Scrubbing:** Replicated the validation array inside the core renaming code to autonomously remove illegal characters in the background if the GUI checks are bypassed.
 
 ### KageMux v1.1.3 (The B2 Routing Override)
-This patch introduced strict input sanitization to resolve critical routing conflicts with external cloud storage providers and link shorteners.[cite: 23]
-* **Comma Neutralization:** Engineered a GUI intercept to immediately halt execution and deploy a targeted modal warning if a comma (`,`) is detected in the Show Title or Fansub Group fields.[cite: 23]
-* **Database Integrity:** Re-engineered the underlying formatting engine to systematically scrub commas from the final string, guaranteeing structural compatibility with B2 storage ecosystems.[cite: 23]
+This hotfix implemented strict input cleaning to fix routing conflicts with external cloud platforms and URL shorteners.
+* **Comma Neutralization:** Built a GUI intercept to immediately stop execution and trigger a warning modal if a comma (`,`) is found in the Show Title or Fansub Group text boxes.
+* **Database Integrity:** Modified the core formatting engine to automatically strip commas from the final string, ensuring structural compliance with B2 storage systems.
 
 ### KageMux v1.1.2 (The Decimal Decoupling Hotfix)
-This rapid logic hotfix overhauled the regex targeting matrix to resolve episode extraction failures caused by complex alphanumeric strings and dot-delimited metadata.[cite: 23]
-* **Alphanumeric OP/ED Capture:** Upgraded the capture groups to seamlessly process alphanumeric theme song variations (e.g., `NCED01`), neutralizing a boundary failure that previously defaulted these files to `00`.[cite: 23]
-* **Resolution Tag Bleed:** Decoupled base integers from subsequent decimals and deployed a `clean_decimal` validation function. This explicitly filters out known video resolution or codec strings (like `.1080`, `.720`, `.264`), preventing them from bleeding into the fractional episode syntax.[cite: 23]
+This rapid logic update overhauled the regex targeting matrix to fix episode extraction bugs triggered by alphanumeric formats and dot-delimited text.
+* **Alphanumeric OP/ED Capture:** Improved the capture groups to seamlessly handle alphanumeric theme variations (such as `NCED01`), fixing a boundary error that defaulted these media files to `00`.
+* **Resolution Tag Bleed:** Separated base integers from following decimals via a `clean_decimal` function. This explicitly ignores video resolution tags (like `.1080` or `.264`), preventing them from contaminating the fractional episode syntax.
 
 ### KageMux v1.1.1 (The Nomenclature Patch)
-This rapid logic patch refined the Shroud Designation Engine's episode extraction matrix to natively isolate irregular release formats without capturing garbage metadata.[cite: 23]
-
-* **Irregular Format Isolation:** Upgraded the regular expression engine to actively target `OVA`, `ONA`, `Special`, and `SP` strings. The engine now flawlessly captures these tags and their associated integers (e.g., converting `OVA 01` or `SP-02` into `OVA_01` and `Special_02`) while automatically discarding trailing resolution tags or ripper metadata like `(BD_1080p)`.[cite: 23]
-* **Season 0 Preservation Protocol:** Engineered an explicit bypass for `S00` metadata anomalies. Instead of stripping the season tag and forcing a collision with main series episodes, the engine safely preserves the `S00Exx` string. This isolates prequels and promotional specials, preventing batch overwrites and granting the user total control over manual bulk renaming workflows.[cite: 23]
+This update refined the Shroud episode extraction logic to isolate irregular release formats without catching excess metadata.
+* **Irregular Format Isolation:** Improved the regex engine to target `OVA`, `ONA`, `Special`, and `SP` variables. The system flawlessly grabs these tags and their integers while dropping trailing resolution metadata like `(BD_1080p)`.
+* **Season 0 Preservation Protocol:** Built an explicit bypass for `S00` metadata anomalies. Rather than stripping the season tag and forcing a collision with standard episodes, the system safely preserves the `S00Exx` string for prequels and specials.
 
 ### KageMux v1.1.0 (The Courier Protocol)
-This major deployment cycle introduced fully autonomous, in-place updating capabilities alongside critical spatial layout and aesthetic optimizations.[cite: 23]
-
-* **The Karasu Handoff Protocol:** Engineered a headless background courier (`karasu.exe`) to bypass strict Windows OS executable file locks. KageMux natively streams the binary payload via an asynchronous `DownloadWorker` thread, hands the temporary file to Karasu, and safely self-terminates. Karasu executes the binary swap, aggressively polls the OS to purge the `.old` backup file, and cleanly reboots the workspace.[cite: 23]
-* **Bilateral Control Layout:** Decoupled the top navigation bar into a dynamically stretched, split layout. Theme and Armory configurations are permanently anchored left, while the Update checker and the newly integrated Ko-fi Support portal are anchored right, ensuring perfect geometric balance across varying monitor sizes.[cite: 23]
-* **Shroud Designation UI Polish:** Rebalanced horizontal UI elements by allocating 3 parts (75%) of available space to the Title input and 1 part (25%) to the Group input. Injected an exact 8-pixel top margin to visually separate the input parameters from the activation toggle. Compressed the Group placeholder text to strictly read `"e.g., SubsPlease"` to entirely eliminate visual cutoff within the condensed bounding box.[cite: 23]
+This significant deployment established fully autonomous updating mechanics and delivered major UI aesthetic optimizations.
+* **The Karasu Handoff Protocol:** Built a headless background executable (`karasu.exe`) to bypass Windows file locks. KageMux downloads the payload asynchronously, hands the file to Karasu, and terminates itself. Karasu handles the binary swap, deletes the `.old` file, and reboots the application.
+* **Bilateral Control Layout:** Split the top navigation bar into a dynamically stretched format. Theme and Armory settings are anchored left, while the Update checker and Ko-fi portal are anchored right for perfect geometric balance.
+* **Shroud Designation UI Polish:** Rebalanced UI proportions by granting 75% space to the Title input and 25% to the Group input. Added an 8-pixel top margin to visually detach inputs from the activation switch.
 
 ### KageMux v1.0.3 (The Shroud Fortification)
-This rapid deployment cycle fortified the Shroud Designation Engine, resolving critical Windows pathing anomalies and introducing intelligent fractional episode synchronization.[cite: 23]
-
-* **Fractional Episode Synchronization:** Engineered dynamic integer padding for decimal releases. When the engine detects a fractional episode (like `05.5`), it automatically zero-pads the corresponding base integer (`05.0`) to guarantee flawless alphanumeric sorting within the Windows Shell.[cite: 23]
-* **Nomenclature Preservation:** Calibrated the regex extraction boundaries to capture exact OP and ED string variations (e.g., `OP2`, `ED1A`) instead of aggressively overwriting them with generic sequence tags.[cite: 23]
-* **Strict Character Sanitization:** Hardened the naming matrix to actively intercept and purge illegal Windows filename characters (`< > : " / \ | ? *`), completely neutralizing `[WinError 123]` thread crashes before execution.[cite: 23]
-* **Extraction Failsafes:** Re-engineered the episode extraction parameters with strict word boundaries to prevent the system from accidentally interpreting hexadecimal CRC values or video resolutions as episode integers.[cite: 23]
+This rapid update fortified the Shroud Designation Engine to fix Windows pathing errors and deploy intelligent fractional episode padding.
+* **Fractional Episode Synchronization:** Built dynamic integer padding for decimal formats. When a fractional episode is detected (like `05.5`), it zero-pads the base integer (`05.0`) to guarantee correct alphanumeric sorting in Windows.
+* **Nomenclature Preservation:** Calibrated regex parameters to capture accurate OP and ED string variations instead of aggressively replacing them with generic tags.
+* **Strict Character Sanitization:** Hardened the naming logic to actively purge illegal Windows characters (`< > : " / \ | ? *`), completely preventing `[WinError 123]` crashes.
+* **Extraction Failsafes:** Modified extraction parameters with strict word boundaries to stop the engine from misidentifying hex CRC values as episode numbers.
 
 ### KageMux v1.0.0 (The Architectural Ascension)
-This major milestone fundamentally transformed KageMux from a lightweight utility into a scalable, high-performance Python application by shedding legacy frameworks and deploying strictly standardized naming protocols.[cite: 23]
-
-* **PyQt6 Framework Migration:** Completely rebuilt the graphical interface using native PyQt6. Introduced dynamic QSS rendering with two persistent aesthetic profiles (ShadowForge Dark and Obsidian Ronin) and established thread-safe background execution via `pyqtSignal` objects.[cite: 23]
-* **Shroud Designation Engine:** Integrated an autonomous batch renaming protocol. The engine automatically extracts episode integers from source files and synthesizes the show title, resolution, and fansub group into a strict, unified format (e.g., `(Hi10)_Title_-_01_(1080p)_(Group)_(CRC).mkv`), successfully bridging the gap between raw rips and standardized archival formats.[cite: 23]
-* **Omni-Linguist Subtitle Fail-Safe:** Upgraded the subtitle parsing matrix to intercept catastrophically blank or undefined (`und`) language metadata. The engine now guarantees that disguised "Signs and Songs" tracks can never hijack the default MKV slot, forcefully elevating the primary dialogue track.[cite: 23]
-* **Void-State Diagnostics:** Deployed a critical diagnostic toggle directly into the Core Resonance terminal. When activated, the engine intercepts fatal memory faults and exposes raw Python stack traces, transforming silent application crashes into actionable developer intelligence.[cite: 23]
-* **Cyclic Redundancy Bypass:** Re-engineered the batch filtering logic. KageMux now securely ingests and processes third-party MKV files containing preexisting CRC hashes while simultaneously maintaining a strict anti-loop barrier for its own `KageMuxed` output directories.[cite: 23]
+This major milestone transitioned KageMux from a basic script into a high-performance Python app by adopting PyQt6 and standardized naming systems.
+* **PyQt6 Framework Migration:** Completely overhauled the graphical interface with native PyQt6. Deployed dynamic QSS styling with two aesthetic profiles (ShadowForge Dark and Obsidian Ronin) and thread-safe background processing.
+* **Shroud Designation Engine:** Added an autonomous batch renaming protocol to synthesize show titles, resolutions, and fansub groups into a strict format (`(Hi10)_Title_-_01_(1080p)_(Group)_(CRC).mkv`).
+* **Omni-Linguist Subtitle Fail-Safe:** Improved the subtitle matrix to intercept blank or `und` metadata, guaranteeing disguised "Signs and Songs" tracks never hijack the default MKV path.
+* **Void-State Diagnostics:** Added a diagnostic toggle to the terminal. When armed, the engine catches fatal memory faults and prints raw Python stack traces for rapid debugging.
+* **Cyclic Redundancy Bypass:** Rebuilt the batch filter to safely ingest MKV files containing preexisting CRC hashes while maintaining a strict anti-loop barrier for `KageMuxed` directories.
 
 ### KageMux v0.9.1 (The Global Routing Update)
-KageMux crossed the 0.9.x threshold by deploying scalable global audio routing, tightening the ShadowForge fallback parameters, and completely modernizing the interface architecture.[cite: 23]
-
-* **Global Audio Routing Matrix:** Introduced a native dropdown menu to define primary target languages (Chinese, Korean, English, or Auto) prior to batch execution. The engine dynamically scans each file and assigns the MKV `Default` flag to the selected stream.[cite: 23]
-* **Intelligent Fallback Parameters:** Engineered a non-blocking fallback loop. If a queued file lacks the preferred language, the engine safely defaults to standard anime routing (Japanese, followed by English) to guarantee uninterrupted batch processing.[cite: 23]
-* **Missing Tag Inference:** Upgraded the parsing matrix to handle `und` (Undefined) audio streams. The engine now scans raw track titles to infer and map the correct ISO 639-2 tag automatically, neutralizing messy ripper conventions.[cite: 23]
-* **Modernized UI Rendering:** Bypassed legacy Windows rendering limitations on dropdown menus by injecting custom X11 styling declarations. The combobox lists now perfectly align with the proprietary KageMux dark theme without stark white popups.[cite: 23]
+This release deployed global audio routing, tightened fallback parameters, and modernized the interface visuals.
+* **Global Audio Routing Matrix:** Added a native dropdown to define target languages (Chinese, Korean, English, or Auto) before batch execution. The system dynamically assigns the MKV `Default` flag to the chosen stream.
+* **Intelligent Fallback Parameters:** Built a non-blocking fallback loop. If a file lacks the targeted language, the system defaults to Japanese routing to guarantee uninterrupted processing.
+* **Missing Tag Inference:** Improved the parsing logic to handle undefined audio streams by reading raw track titles to infer and map the correct ISO 639-2 tags.
+* **Modernized UI Rendering:** Bypassed Windows rendering limits on dropdown menus by applying custom X11 styling declarations to match the proprietary dark theme perfectly.
 
 ### KageMux v0.8.17 (The Telemetry & Metadata Patch)
-This critical patch resolved aggressive metadata erasure bugs and introduced intelligent language telemetry harvesting.[cite: 23]
-
-* **Intelligent Telemetry Harvesting:** The audio scoring engine was upgraded to actively intercept embedded ISO 639-2 MKV language tags (such as `chi` or `jpn`), routing them through an internal dictionary to generate clean, standardized track metadata.[cite: 23]
-* **Metadata Preservation Protocol:** Resolved a logical flaw that assigned blank strings to non-standard audio streams. The engine gracefully falls back to original track names, completely preventing media players from wiping titles and displaying generic placeholders like "Audio 2".[cite: 23]
-* **Strict Language Flagging:** The engine was updated to explicitly enforce the `--language` command flag across all audio outputs, guaranteeing perfect hardware and software player recognition.[cite: 23]
+This update fixed aggressive metadata erasure bugs and introduced smart language telemetry harvesting.
+* **Intelligent Telemetry Harvesting:** The audio engine was upgraded to intercept embedded ISO 639-2 MKV tags, running them through an internal dictionary to output clean, standardized track data.
+* **Metadata Preservation Protocol:** Fixed a logic bug that assigned blank text to non-standard audio streams. The engine gracefully falls back to original track names to prevent media players from displaying generic placeholders.
+* **Strict Language Flagging:** The engine now explicitly forces the `--language` command flag across all audio tracks to ensure perfect hardware player recognition.
 
 ### KageMux v0.8.16 (The TimeWeaver Unification Update)
-This release bridged secondary toolsets into the global application parameters and resolved critical graphical interface anomalies within the Windows Shell.[cite: 23]
-
-* **TimeWeaver Pipeline Unification:** Integrated synchronization outputs directly into global pathing rules. The engine now automatically calculates and appends CRC32 checksums or routes processed files to a dedicated `KageMuxed` directory based on the primary user configuration.[cite: 23]
-* **Persistent Taskbar Branding:** Resolved a Windows API anomaly triggered by drag-and-drop modules. By declaring a default global icon sequence, the system prevents the OS from reverting to default system visual assets across spawned child windows.[cite: 23]
-* **Transient Modal Architecture:** Engineered child dialog boxes to act as transient dependents of the main interface. This architectural shift unlocked localized drag-and-drop mechanics for internal text fields and improved taskbar window grouping.[cite: 23]
-* **Streamlined Nomenclature:** Stripped redundant "VFR" branding across all graphical and terminal surfaces to establish a cleaner, more definitive "TimeWeaver" feature identity.[cite: 23]
+This patch bridged secondary tools into the global pathing rules and fixed graphical UI anomalies.
+* **TimeWeaver Pipeline Unification:** Connected synchronization outputs directly to global routing logic. The system now automatically calculates CRC32 checksums or targets the `KageMuxed` directory based on main user settings.
+* **Persistent Taskbar Branding:** Fixed a Windows API bug triggered by drag-and-drop actions by declaring a default global icon sequence for all spawned windows.
+* **Transient Modal Architecture:** Configured child dialog boxes to act as transient dependents of the main interface, unlocking local drag-and-drop mechanics for internal text boxes.
+* **Streamlined Nomenclature:** Removed redundant "VFR" phrasing across all graphical surfaces to build a cleaner "TimeWeaver" feature identity.
 
 ### KageMux v0.8.14 (The Synchronization Milestone)
-This major update deployed precision synchronization tools and completely overhauled subtitle metadata adherence to eliminate playback paradoxes across advanced splitters.[cite: 23]
-
-* **VFR TimeWeaver Module:** Deployed a dedicated dual-directory synchronization tool. The engine utilizes `mkvextract` to rip native Variable Frame Rate (VFR) timecodes from a source folder and injects them directly into re-encoded outputs, perfectly restoring duration and lip-sync without terminal commands.[cite: 23]
-* **Strict SDH Inclusivity:** Rebuilt the subtitle parser to prioritize Subtitles for the Deaf and Hard of Hearing. The engine automatically assigns `Default` and `Hearing Impaired` flags strictly to the SDH track, ensuring automatic playback across all platforms.[cite: 23]
-* **Standardized Forced Flags:** Resolved LAV Splitter logic conflicts by explicitly reserving the `Forced Display` flag solely for isolated "Signs & Songs" tracks, mathematically aligning the output with official MKVToolNix specifications.[cite: 23]
-* **Pristine Core Resonance Logging:** Silenced redundant progress text from the terminal output. The engine compiles files silently in the background, relying entirely on the graphical progress bar and generating clean, uninterrupted terminal reports.[cite: 23]
+This major update deployed synchronization tools and overhauled subtitle metadata handling for advanced splitters.
+* **VFR TimeWeaver Module:** Added a dual-directory sync tool. The engine uses `mkvextract` to rip Variable Frame Rate timecodes from a source folder and injects them into new encodes, restoring lip-sync automatically.
+* **Strict SDH Inclusivity:** Rebuilt the subtitle engine to prioritize Hearing Impaired tracks. The system assigns `Default` and `Hearing Impaired` flags directly to the SDH track for immediate accessibility playback.
+* **Standardized Forced Flags:** Fixed LAV Splitter logic issues by reserving the `Forced Display` flag exclusively for "Signs & Songs" tracks, strictly matching MKVToolNix guidelines.
+* **Pristine Core Resonance Logging:** Muted raw progress spam from the terminal, allowing the engine to compile files silently while generating clean final reports.
 
 ### KageMux v0.8.10 (The Paradox Protocol)
-* **Metadata Singularity Enforcement:** Replicated the internal logic of the MKVToolNix GUI by forcing the application to explicitly strip residual `Default` flags from all secondary audio and video streams. This ensures a solitary default path, preventing player confusion and incorrect subtitle selection.[cite: 23]
-* **Forced Display Overrides:** Transitioned the subtitle multiplexing syntax from legacy parameters to the modernized `--forced-display-flag` for total hardware compatibility.[cite: 23]
+* **Metadata Singularity Enforcement:** Mirrored the internal MKVToolNix GUI logic by forcing the app to strip leftover `Default` flags from secondary streams, ensuring a single default path.
+* **Forced Display Overrides:** Shifted subtitle multiplexing parameters from outdated syntax to the modernized `--forced-display-flag` for maximum hardware support.
 
 ### KageMux v0.8.5 (The Inclusivity Override)
-* **SDH Exclusivity Targeting:** Adjusted the subtitle scanning logic to halt standard English track selection if an SDH or CC track is detected in the telemetry, forcing accessibility directly into the primary path.[cite: 23]
-* **Metadata Protection Ring:** Re-engineered the subtitle tagging script to strictly preserve unique ripper group identifiers and codec strings instead of aggressively overwriting them with normalized base languages.[cite: 23]
+* **SDH Exclusivity Targeting:** Modified the subtitle logic to stop standard English selection if an SDH track is detected, placing accessibility in the primary slot.
+* **Metadata Protection Ring:** Rebuilt the tagging script to preserve unique ripper group identifiers rather than overwriting them with generic normalized languages.
 
 ### KageMux v0.8.0 (The Kinetic Telemetry Milestone)
-This release elevated the application into an OS-aware workspace, drastically reducing user friction and expanding batch processing fluidity.[cite: 23]
-
-* **Kinetic Drag and Drop Engine:** Users can now drag single files or massive television batch directories directly from Windows Explorer into the application for instantaneous pathing.[cite: 23]
-* **Intelligent Dependency Detection:** The engine automatically hunts for required software dependencies (MKVToolNix and FFmpeg) in default system paths upon startup, entirely bypassing the need for manual configuration.[cite: 23]
-* **Native Taskbar Identity:** Hooked directly into the Windows Shell API to display proprietary KageMux branding on the taskbar.[cite: 23]
-* **UI State Synchronization:** Progress bars and telemetry spinners automatically snap back to zero the moment a new target is queued.[cite: 23]
+This release drastically reduced user friction by adding OS-aware drag-and-drop processing.
+* **Kinetic Drag and Drop Engine:** Operators can drag single files or massive TV batch folders directly from Windows Explorer into the UI for instant pathing.
+* **Intelligent Dependency Detection:** The system automatically hunts for MKVToolNix and FFmpeg in default system directories during startup, bypassing manual configuration completely.
+* **Native Taskbar Identity:** Hooked into the Windows Shell API to display proprietary branding on the local taskbar.
+* **UI State Synchronization:** Progress bars automatically reset to zero the moment a new target is processed.
 
 ### KageMux v0.7.2 (The Environment Integration Update)
-* **Automated Armory Paths:** Laid the groundwork for intelligent startup scanning, allowing the application to autonomously verify background dependencies using Windows PATH variables.[cite: 23]
+* **Automated Armory Paths:** Established the foundation for intelligent startup scanning, letting the system verify background dependencies using Windows PATH variables.
 
 ### KageMux v0.7.1 (The Metadata Fallback Patch)
-This patch introduced critical resilience mechanics to prevent data loss when processing catastrophically malformed source files.[cite: 23]
-
-* **Advanced Tie-Breaker Protocol:** When the scoring engine detects two duplicate audio codecs of identical quality, it now evaluates the physical length of the tracks. The engine automatically preserves the full-length audio stream while purging truncated samples or isolated theme songs.[cite: 23]
-* **Corrupt Header Fallbacks:** If a source file is missing standard duration metadata, the engine executes an aggressive secondary scan to calculate track length via embedded byte and frame tags.[cite: 23]
-* **Lore-Accurate Telemetry:** The terminal was updated to dynamically rebrand the final summary block based on the active pipeline (outputting either **THE SHADOWFORGED REPORT** or **THE PHANTOM-RECONSTRUCTED REPORT**).[cite: 23]
+This update brought critical resilience mechanics to stop data loss when handling malformed source files.
+* **Advanced Tie-Breaker Protocol:** When two duplicate audio codecs of exact quality tie in points, the engine checks physical track length to preserve the full stream while purging truncated samples.
+* **Corrupt Header Fallbacks:** If a media file lacks standard duration metadata, the engine runs an aggressive secondary scan to calculate length via embedded byte tags.
+* **Lore-Accurate Telemetry:** Updated the terminal to dynamically alter the final summary header based on the active processing pipeline.
 
 ### KageMux v0.7.0 (The Architectural Refactor)
-* **Unified Scoring Matrix:** Streamlined the underlying track evaluation logic to increase processing speed, reduce memory footprint, and guarantee stability across both optimization pipelines.[cite: 23]
-* **Core Resonance Summaries:** Eliminated terminal text spam during multiplexing. The application now silently aggregates all track removals in the background and prints a highly readable, file-by-file summary report at the end of the batch.[cite: 23]
+* **Unified Scoring Matrix:** Streamlined audio evaluation logic to boost processing speed, lower memory use, and ensure stability across both pipelines.
+* **Core Resonance Summaries:** Stopped terminal text spam during multiplexing. The app silently aggregates removals and prints a clean file-by-file summary report at completion.
 
 ### KageMux v0.6.3 (The Omni-Linguist Patch)
-* **Intelligent Subtitle Parsing:** The engine dynamically standardizes complex subtitle tags while actively preserving critical VOD source acronyms (e.g., `[CR]`, `[AMZN]`, `[HIDIVE]`).[cite: 23]
-* **Serialized Subtitle Metadata:** Unified custom subtitle attributes into clean, standardized naming conventions (such as `(Signs & Songs)`, `(SDH)`, and `(Korean Names)`).[cite: 23]
-* **Tactical Visual Overhaul:** Deployed a dark, low-contrast visual theme across the entire interface to reduce eye strain during extended encoding sessions.[cite: 23]
+* **Intelligent Subtitle Parsing:** The system standardizes complex subtitle tags while keeping critical source acronyms intact (like `[CR]`, `[AMZN]`).
+* **Serialized Subtitle Metadata:** Unified custom text attributes into clean naming conventions (`(Signs & Songs)`, `(SDH)`).
+* **Tactical Visual Overhaul:** Deployed a dark visual aesthetic across the entire interface to lower eye strain during encoding workflows.
 
 ### KageMux v0.6.2 (The Core Engine Baseline)
-This was the foundational release that established the overarching ShadowForge architecture and introduced advanced automated logic.[cite: 23]
-
-* **The ShadowForge Engine:** Introduced the primary audio scoring matrix to rank and filter audio tracks by codec hierarchy (prioritizing FLAC/Opus over Dolby Digital, and Dolby Digital over AAC) and channel configurations.[cite: 23]
-* **The Phantom Reconstruct Pipeline:** Built the emergency fallback routine to fix corrupt headers and desynchronized audio. This pipeline brutally extracts raw streams via FFmpeg and rebuilds them into pristine containers via MKVMerge.[cite: 23]
-* **Dual-Audio Routing:** Enabled automatic detection of Japanese and English audio streams to dynamically map Default and Forced subtitle flags for anime releases.[cite: 23]
-* **Automated Hash Generation:** Added CRC32 checksum calculations, automatically appending verification tags to finalized filenames.[cite: 23]
-* **The Armory Configuration:** Introduced a dedicated UI modal for users to manually link and test the required backend executables.[cite: 23]
+This foundational release established the ShadowForge architecture and advanced automated logic.
+* **The ShadowForge Engine:** Deployed the primary audio matrix to filter tracks by codec tier and channel arrays.
+* **The Phantom Reconstruct Pipeline:** Added the emergency fallback protocol to repair corrupt headers by extracting naked streams via FFmpeg and rebuilding them.
+* **Dual-Audio Routing:** Added automatic recognition of Japanese and English audio to map Default and Forced subtitle flags.
+* **Automated Hash Generation:** Injected CRC32 checksum generation to automatically append verification numbers to final filenames.
+* **The Armory Configuration:** Added a UI window for operators to manually link backend executable files.
 
 ### KageMux v0.3 Release (Initial Prototype)
-* **CLI Engine Wrapper:** The original proof-of-concept interface that bridged raw command-line tools into a basic graphical environment.[cite: 23]
-* **Basic Batch Automation:** Enabled foundational folder parsing to eliminate the need for manual track selection on a file-by-file basis.[cite: 23]
+* **CLI Engine Wrapper:** The foundational proof-of-concept interface that wrapped raw command-line utilities into a basic graphical container.
+* **Basic Batch Automation:** Enabled simple folder parsing to negate the need for file-by-file manual track isolation.
